@@ -3,7 +3,9 @@
 // console.log("Eu estou no console.");
 let tabuada = 5;
 function alo(){
-    let 
+
+    let tabuada = document.getElementById("entrada").value;
+
     document.write("<h1>Tabuada do " + tabuada + "</h1>");
     document.write(tabuada + " x 1 = " + (tabuada*1)+"<br>");
     document.write(tabuada + " x 2 = " + (tabuada*2)+"<br>");
@@ -26,46 +28,27 @@ function escreva(){
     }
 }
 
-
-
 function quadrado(){
     for(var i = 2; i < 11; i++){
         document.write("O quadrado de " + i + " é " + (i*i)+"<br>");
-
-
-
-function total(){
-    let Val = document.getElementById("Valor").Value;
-    let ju = document.getElementById
-
-
-
-
-}
-
-
-
-
-
-
     }
 }
 
+function total(){
+    let val = document.getElementById("valor").value;
+    let ju = document.getElementById("juros").value;
+    let resultado = (val * ((ju/100)+1));
+    document.write("O total é de: " + resultado);
+}
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+function soma(){
+    let n1 = document.getElementById("b1").value;
+    let n2 = document.getElementById("b2").value;
+    let n3 = document.getElementById("b3").value;
+    let n4 = document.getElementById("b4").value;
+    let r = Number(n1) + Number(n2) + Number(n3) + Number(n4);
+    document.getElementById("resultado").innerHTML = r;
+}
 
 
 
